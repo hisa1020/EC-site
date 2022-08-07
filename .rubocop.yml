@@ -1,0 +1,26 @@
+inherit_from:
+  - .rubocop_airbnb.yml
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'bin/*'
+    - 'config/environments/*'
+    - 'config/application.rb'
+    - 'config/initializers/*'
+    - 'config/spring.rb'
+    - 'lib/tasks/*'
+    - 'vendor/**/*'
+    - 'path/ruby'
+
+Layout/IndentationConsistency:
+  Exclude:
+    - 'config/routes.rb'
+
+Layout/LineLength:
+  Exclude:
+    - 'config/routes.rb'
+
+Layout/EmptyLinesAroundModuleBody:
+  Exclude:
+    - 'app/helpers/application_helper.rb'
